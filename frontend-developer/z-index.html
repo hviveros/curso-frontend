@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	.container{
+	    background-color: gray;
+	    margin: 0 auto;
+	    text-align: center;
+	    width: 300px;
+	    height: 300px;
+	}
+
+	.box{
+	    width: 100px;
+	    height: 100px;
+	    position: absolute;
+	    text-align: center;
+	}
+
+	#rojo{
+	    background-color: red;
+	    top: 120px;
+	    left: 43%;
+	    z-index: 5;
+	}
+
+	#azul{
+	    background-color:cyan;
+	    top: 70px;
+	    left: 45%;
+	    z-index: 4;
+	}
+
+	#amarillo{
+	    background-color: yellow;
+	    top: 70px;
+	    left: 53%;
+	    z-index: 6;
+	}
+	</style>
+</head>
+<body>
+	<!-- <div class="one">Comunidad</div>
+	<div class="two">Master</div> -->
+
+	<main class="container">
+        <p>Propiedad z-index</p>
+        <div class="box" id="rojo">Rojo <br> z-index = 5</div>
+        <div class="box" id="azul">
+            Azul <br> z-index = 4
+            <div class="box" id="amarillo">Amarillo <br> z-index = 6</div>
+        </div>
+    </main>
+</body>
+</html>
