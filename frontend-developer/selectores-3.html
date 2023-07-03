@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Las pseudoclases nos permite llegar a aquellas acciones que hace el usuario. */
+        /* pseudoclases : */
+        /* pseudoelementos :: */
         p{
             color: salmon;
         }
+        /* pseudoelemento */
+        /* todo lo que este antes del <p> tendra ese simbolo */
         p::before{
             content: "« " ;
         }
+         /* pseudoelemento */
+        /* todo lo que este despues del <p> tendra ese simbolo */
         p::after{
             content: " »";
         }
+        /* pseudoelemento */
+        /* la primera letra tendra estos estilos */
         p::first-letter{
             color: turquoise;
         }
         p:hover{
             color: skyblue;
         }
+        /* el hijo 2 va tener estos estilos */
         div p:nth-child(2){
             color: slateblue;
         }
+        /* todos los placeholders tendran estos estilos */
         ::placeholder{
             color: aqua;
         }

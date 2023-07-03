@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Selector de tipo */
+        section {
+            /* soy un selector de tipo */
+        }
         div p {
             color:red;
             font-size: 30px;
         }
+        /* solo aplica al que le sigue directamente */
+        /* los siguientes no se veran afectados */
         div > div {
             background-color: plum;
         }
+        /* Elementos adyacentes */
+        /* aplica solamente al elemento siguiente del inidicado */
         div + section{
             background-color: powderblue;
         }
+        /* General de hermanos */
+        /* Es similar al adyacente, pero esta vez no solo selecciona al de abajo, sino a cualquiera que esté al mismo nivel que el selector original, es decir, a sus hermanos */
+        /* En este caso, todos los hermanos <p> que esten debajo de la etiqueta <div> seran afectados */
         div ~ p {
             background-color: royalblue;
         }

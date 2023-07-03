@@ -16,6 +16,7 @@
 	.box{
 	    width: 100px;
 	    height: 100px;
+		/* para que el z-index funcione, la clase debe tener position-absolute */
 	    position: absolute;
 	    text-align: center;
 	}
@@ -50,7 +51,8 @@
         <p>Propiedad z-index</p>
         <div class="box" id="rojo">Rojo <br> z-index = 5</div>
         <div class="box" id="azul">
-            Azul <br> z-index = 4
+            Azul <br>
+			z-index = 4
             <div class="box" id="amarillo">Amarillo <br> z-index = 6</div>
         </div>
     </main>

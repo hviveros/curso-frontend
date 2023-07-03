@@ -9,13 +9,16 @@
 			width: 300px;
 			height: 300px;
 			background-color: papayawhip;
+			/* para poder trabajar con los elementos hijos */
 			position: relative;
+			/*inmediatamente despues indicamos donde se ubicara con respecto a su contenedor, en este caso body*/
 			top: 30px;
 		}
 		.item{
-			width: 150px;
-			height: 150px;
+			width: 100px;
+			height: 100px;
 			background-color: hotpink;
+			/* con esto se le dice que el espacio donde se va mover es exclusivamente dentro de su contenedor*/
 			position: absolute;
 			right: 0;
 		}
@@ -23,10 +26,13 @@
 			width: 100%;
 			height: 60px;
 			background-color: lightcyan;
+			/*con esto se va quedar exactamente fijo en el area donde indiquemos*/
 			position: fixed;
-			top: 0;
+			top: 400px;
 		}
 		ul p{
+			/*queda fijo hasta que su hermano tome su ubicacion, es obligatorio tener otros hermanos*/
+			/*se utiliza bastante en landings*/
 			position: sticky;
 			top: 0;
 		}

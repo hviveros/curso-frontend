@@ -7,19 +7,25 @@
     <title>Document</title>
     <style>
         .container{
-            display: flex;
             background-color: papayawhip;
+            /* con esto le decimos que va usar todas las propiedades de flex-box */
+            /* cada que haya un padre hay que aplicar el tipo de display .flex, para usar las propiedades */
+            /* a los items no se les coloca estas propiedades */
+            display: flex;
+            /* todos los elementos se distribuyen a lo ancho del contenedor*/
             /* justify-content: space-between; */
             justify-content: center;
             align-items: center;
+            /* con esto se cambia el eje central */
             flex-direction: column;
             height: 300px;
         }
         .item{
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             background-color: seagreen;
         }
+        /* pseudoclase a todos los elementos impares */
         .container .item:nth-child(2n + 1){
             background-color: sienna;
         }
